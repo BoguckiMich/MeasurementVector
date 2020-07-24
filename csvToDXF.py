@@ -2,8 +2,10 @@ import ezdxf
 import pandas as pd
 import numpy as np
 
-projekt = pd.read_csv('projekt.csv')
-pomiar = pd.read_csv('pomiar.csv')
+# this file compare projekt.csv and pomiar.csv then it creates lines between results and saves it to dxf file
+
+projekt = pd.read_csv('./resources/projekt.csv')
+pomiar = pd.read_csv('./resources/pomiar.csv')
 print(projekt.head(5))
 print(pomiar.head(5))
 
@@ -45,4 +47,4 @@ for x in dfPomiar.index:
             #         'dimse2': 1,  # suppress second extension line
             #     }).render()
 
-doc.saveas('lines.dxf')
+doc.saveas('./result/lines.dxf')
