@@ -50,4 +50,4 @@ for x in dfPomiar.index:
 
 doc.saveas('./result/lines.dxf')
 
-palowanie_do_excela(dfProjekt)
+palowanie_do_excela(dfProjekt, dfPomiar)
