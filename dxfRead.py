@@ -34,3 +34,4 @@ y2 = polyline_points[-1][0][1]
 
 azimuth = math.atan((y2-y1)/(x2-x1))
 print(azimuth*180/math.pi)
+
